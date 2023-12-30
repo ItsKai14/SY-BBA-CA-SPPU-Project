@@ -130,9 +130,16 @@ header {
     transition: all 0.3s ease-in;
 }
 
+.right-sidebar{
+    margin-top: 20%;
+    margin-right: 1%;
+}
+
 .social{
     display: inline;
     width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
 }
 
 .social-icon{
