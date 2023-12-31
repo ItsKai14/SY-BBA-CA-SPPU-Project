@@ -117,6 +117,7 @@ header {
     background-color: transparent;
     transition: all 0.4s ease-in-out;
     margin-top: 1em;
+    margin-right: 20px;
     cursor: pointer;
 }
 
@@ -141,7 +142,8 @@ header {
     margin-bottom: 1em;
     padding-top: 7px;
     padding-left: 10px;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .right-sidebar{
@@ -171,7 +173,6 @@ b{
     color: #ffffff;
     text-shadow: 0 0 7px black;
     background-color: rgba(136, 143, 143, 0.3);
-    font-size: 20.5px;
     border-radius: 8px;
     border-bottom: solid rgb(153, 148, 148) 1px;
 }
@@ -203,6 +204,7 @@ b{
         transform: translateY(0);
         opacity: 1;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -214,7 +216,7 @@ b{
 
     .nav{
         display: flex;
-        width: fit-content;
+        width: 100%;
         justify-content: flex-start;
         margin-left: 15%;
         padding-top: 10px;
@@ -224,9 +226,14 @@ b{
     header{
         width: 100%;
     }
+
+    .nav:hover{
+        width: 75%;
+    }
+
   }
 
-@media screen and (max-height: 780px) {
+@media screen and (max-height: 500px) {
     
     .menu.open{
         width: 100%;
@@ -245,6 +252,7 @@ b{
     nav{
         width: fit-content;
     }
+
 
 }
 
