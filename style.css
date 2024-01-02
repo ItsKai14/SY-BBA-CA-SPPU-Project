@@ -5,24 +5,31 @@ body {
     background-color: bisque;
 }
 
-.head {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    background-color: #333;
-    color: #fff;
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .rero{
+    background-image: url(./images/Background-gaming-3.jpg);
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    height: 75vh;
+    margin-right: auto;
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+.rero::-webkit-scrollbar{
+    display: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-bottom: 5px;
+    background-color: #333;
+    color: #fff;
 }
 
 .logo {
@@ -32,26 +39,19 @@ body {
 }
 
 .logo-icon{
-    width: 5rem;
-
+    width: 4.275rem;
 }
 
 .logo-txt{
-    font-size: 2.2rem;
+    font-size: 26px;
+    width: 100%;
 }
 
 .container {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    background: url('./images/gaming-1920x809.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 75vh;
-    position: fixed;
 }
 
 /* Hamburger button */
