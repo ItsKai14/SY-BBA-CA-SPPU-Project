@@ -10,13 +10,12 @@ body::-webkit-scrollbar{
 }
 
 .rero{
-    background-image: url(./images/Background-gaming-3.jpg);
+    background-image: url(./images/gaming-1920x809.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
     margin-right: auto;
-    height: 85vh;
-    overflow-y: scroll;
+    height: 70vh;
 }
 
 .rero::-webkit-scrollbar{
@@ -209,6 +208,15 @@ b{
 
 }
 
+@media only screen and (max-width: 1270px){
+
+    .rero{
+        width: 100%;
+        height: 85vh;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
 
     .menu.open{
@@ -233,7 +241,7 @@ b{
         width: 75%;
     }
 
-  }
+}
 
 @media screen and (max-height: 500px) {
     
@@ -242,6 +250,16 @@ b{
         height: 100%;
     }
 
+}
+
+@media screen and (max-width: 1500px){
+    .rero{
+        width: 100%;
+        height: 70vh;
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 
 @media screen and (max-width: 400px){
