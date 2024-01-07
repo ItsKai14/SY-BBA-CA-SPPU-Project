@@ -1,0 +1,325 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: bisque;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.rero{
+    background-image: url(/images/gaming-1920x809.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin-right: auto;
+    height: 70vh;
+}
+
+.rero::-webkit-scrollbar{
+    display: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-bottom: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    display: inline-flex;
+    width: min-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo-icon{
+    width: 4.275rem;
+}
+
+.logo-txt{
+    font-size: 26px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hamburger button */
+.hamburger {
+    background-color: transparent;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;   
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+}
+
+.icon:hover{
+    border: solid rgb(74, 162, 235) 1px;
+    transition: all 0.2s ease-in-out;
+    padding: 2px;
+}
+
+/* Menu */
+.menu {
+    display: none;
+    /* Hide initially */
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+}
+
+.menu .close-menu {
+    /* Added close option styles */
+    text-align: right;
+    margin-right: 1em;
+}
+
+.close-btn {
+    border-radius: 0px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+    margin-top: 1em;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.nav{
+    width: 16%;
+    width: fit-content;
+    height: 2em;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #020202;
+    font-size: larger;
+    margin-left: 45%;
+    margin-bottom: 1em;
+    padding-top: 7px;
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.right-sidebar{
+    width: 2rem;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+}
+
+.social{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.social-icon{
+    width: 40px;
+}
+
+b{
+    margin-top: 3px;
+}
+
+.nav:hover{
+    width: 16%;
+    color: #ffffff;
+    text-shadow: 0 0 7px black;
+    background-color: rgba(136, 143, 143, 0.3);
+    border-radius: 8px;
+    border-bottom: solid rgb(153, 148, 148) 1px;
+}
+
+/* Open menu styles */
+.menu.open {
+    width: 100%;
+    height: max-content;
+    position: fixed;
+    display: inline-block;
+    justify-items: center;
+    min-height: 48px;
+    animation: slide-in 0.414s ease-in-out forwards;
+    /* Show the menu when open */
+}
+
+.hamburger:checked + .open {
+    display: block;
+    /* Show the menu when hamburger is checked */
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+@media only screen and (max-width: 1270px){
+
+    .rero{
+        width: 100%;
+        height: 85vh;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .menu.open{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .nav{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 15%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .nav:hover{
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-height: 500px) {
+    
+    .menu.open{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1970px){
+    .rero{
+        width: 100%;
+        background-position: top;
+        background-size: contain;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1665px) {
+
+    .rero{
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+
+    .menu.open{
+        width: 100%;
+        height: 100%;
+    }
+
+    nav{
+        width: fit-content;
+    }
+
+
+}
+
+@media screen and (max-width: 350px){
+
+    nav{
+        width: fit-content;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 225px){
+
+    .menu.open{
+        width: 100%;
+    }
+
+    nav{
+        width: fit-content;
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width: 100px){
+
+    .menu.open{
+        width: 100px;
+    }
+
+    nav{
+        width: fit-content;
+        font-size: 5px;
+    }
+
+    .social{
+        width: 2px;
+    }
+
+}
