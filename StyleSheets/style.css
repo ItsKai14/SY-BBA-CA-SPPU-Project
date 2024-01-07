@@ -10,7 +10,7 @@ body::-webkit-scrollbar{
 }
 
 .rero{
-    background-image: url(/images/gaming-1920x809.jpg);
+    background-image: url(images/gaming-1920x809.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
