@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WxD Studio</title>
     <link rel="stylesheet" href="./StyleSheets/style.css">
+    <script src="./Libraries/Sources/angular.min.js"></script>
+    <script src="./Libraries/Card/cards.js"></script>
 </head>
 
 <body>
@@ -23,32 +25,37 @@
     <nav class="menu">
         <pre class="close-menu"><button class="close-btn" style="color: black; font-size: large;">X</button></pre>
         <div class="menu-content">
-            <a href="home.html">
-                <div class="nav"><img class="menu-icon" src="./images/shopping-bag.png" alt="Shop">&nbsp; <b>Explore Our Shop</b></div>
-            </a>
+            <div class="nav" onclick="window.location.href = './home.html';"><img class="menu-icon" src="./images/shopping-bag.png" alt="Shop">&nbsp; <b>Explore Our Shop</b></div>
             <div class="nav"><img class="menu-icon" src="./images/information.png" alt="Information">&nbsp; <b>Know More About Us</b></div>
             <div class="nav"><img class="menu-icon" src="./images/chat.png" alt="Chat">&nbsp; <b>Start A quick Chat</b>
             </div>
         </div>
     </nav>
-    <div class="rero">
+    <div class="rero" style="background-image: url(./images/girl-comp-bg.jpg);">
         <div class="disc1">
             <section>
                 <div class="s1">
-                    <small>SpecsCraft</small>
+                    <small id="sm1">SpecsCraft</small>
                     <h3 class="h3">Your Satisfaction</h3>
                     <h1 class="h1">is Our <b>1<sup>St</sup> Priority</b></h1>
-                    <button class="enter-shop">Enter Shop</button>
+                    <button class="enter-shop" onclick="window.location.href = '';">Enter Shop</button>
                 </div>
             </section>
         </div>
     </div>
     <div class="roro">
-        <div class="card">
-            
+        <h1 style="font-size: xxx-large;">Categories</h1>
+        <div ng-app="myApp" ng-controller="CardController">
+            <div class="card" ng-repeat="card in cards">
+              <img ng-src="{{ card.image }}" alt="{{ card.name }}">
+              <hr>
+              <h2>{{ card.name }}</h2>
+              <p>{{ card.description }}</p>
+              <a href="{{ card.href }}"><button class="card-btn">View {{ card.name }}</button></a>
+            </div>
         </div>
     </div>
-    <script src="hamburger.js"></script>
+    <script src="./Libraries/Hamburger/hamburger.js"></script>
 </body>
 
 </html>
