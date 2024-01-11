@@ -10,7 +10,7 @@ body::-webkit-scrollbar{
 }
 
 .rero{
-    background-image: url(/images/girl-somp-bg.jpg);
+    background-image: url(pulic/images/girl-somp-bg.jpg);
     background-position: center;
     background-size: contain;
     width: 100%;
