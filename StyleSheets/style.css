@@ -9,7 +9,12 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+<<<<<<< HEAD
 .rero {
+=======
+.rero{
+    background-image: url(public/images/girl-somp-bg.jpg);
+>>>>>>> ec3184d81593ecd27b974b56850c6dba7ffe3958
     background-position: center;
     background-size: contain;
     width: 100%;
@@ -513,6 +518,10 @@ b {
         margin-top: 4.4rem;
     }
 
+<<<<<<< HEAD
 
 
 }
+=======
+}
+>>>>>>> ec3184d81593ecd27b974b56850c6dba7ffe3958
