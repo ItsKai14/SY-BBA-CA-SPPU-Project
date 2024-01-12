@@ -73,7 +73,7 @@ small {
 /*CSS For Cards*/
 .card {
     width: 20rem;
-    margin: 9rem;
+    margin: 4rem;
     margin-top: 3rem;
     padding: 15px;
     border: 1px solid #ccc;
@@ -88,7 +88,7 @@ small {
 }
 
 .card img {
-    width: 100%;
+    width: 98%;
 }
 
 .card a {
