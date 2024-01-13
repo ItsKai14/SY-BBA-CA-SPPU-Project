@@ -102,6 +102,10 @@ header {
     /* Show the menu when hamburger is checked */
 }
 
+.carousel-1{
+    width: 40rem;
+}
+
 @keyframes slide-in {
     from {
         transform: translateY(-100%);

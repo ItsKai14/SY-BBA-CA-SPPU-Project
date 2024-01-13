@@ -25,9 +25,9 @@
     <nav class="menu">
         <pre class="close-menu"><button class="close-btn" style="color: black; font-size: large;">X</button></pre>
         <div class="menu-content">
-            <div class="nav" onclick="window.location.href = './home.html';"><img class="menu-icon" src="./images/shopping-bag.png" alt="Shop">&nbsp; <b>Explore Our Shop</b></div>
+            <div class="nav" onclick="window.location.href = './home.html';"><img class="menu-icon" src="./images/shopping-bag.png" alt="Shop">&nbsp; <b>View Shop</b></div>
             <div class="nav"><img class="menu-icon" src="./images/information.png" alt="Information">&nbsp; <b>Know More About Us</b></div>
-            <div class="nav"><img class="menu-icon" src="./images/chat.png" alt="Chat">&nbsp; <b>Start A quick Chat</b>
+            <div class="nav"><img class="menu-icon" src="./images/chat.png" alt="Chat">&nbsp; <b>Start A quick Conversation</b>
             </div>
         </div>
     </nav>
@@ -37,7 +37,7 @@
                 <div class="s1">
                     <small id="sm1">SpecsCraft</small>
                     <h3 class="h3">Your Satisfaction</h3>
-                    <h1 class="h1">is Our <b>1<sup>St</sup> Priority</b></h1>
+                    <h1 class="h1">is Our <b>1<sup style="font-size: xx-large;">St</sup> Priority</b></h1>
                     <button class="enter-shop" onclick="window.location.href = '';">Enter Shop</button>
                 </div>
             </section>
@@ -48,7 +48,7 @@
         <div ng-app="myApp" ng-controller="CardController">
             <div class="card" ng-repeat="card in cards">
               <img ng-src="{{ card.image }}" alt="{{ card.name }}">
-              <hr>
+              <b><hr></b>
               <h2>{{ card.name }}</h2>
               <p>{{ card.description }}</p>
               <a href="{{ card.href }}"><button class="card-btn">View {{ card.name }}</button></a>
