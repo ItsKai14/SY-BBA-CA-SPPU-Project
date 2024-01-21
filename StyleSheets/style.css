@@ -826,7 +826,7 @@ footer {
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) and (max-height: 640px) {
 
     body::-webkit-scrollbar {
         display: none;
@@ -836,7 +836,7 @@ footer {
         background-image: url(https://images.unsplash.com/photo-1664575600850-c4b712e6e2bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg3Nnx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D);
         margin: 0;
         width: 100%;
-        height: 40%;
+        height: 50%;
         background-position: center;
         background-size: contain;
     }
@@ -862,7 +862,7 @@ footer {
     .s1 {
         width: max-content;
         height: max-content;
-        padding-top: 30rem;
+        padding-top: 100%;
         margin-left: 4rem;
     }
 
@@ -988,6 +988,20 @@ footer {
     }
 
 }
+
+@media screen and (max-width: 360px) and (max-height: 530px) {
+    
+    .rero{
+        background-size: contain;
+    }
+
+    .s1{
+        padding-top: 80%;
+    }
+
+}
+
+
 
 @media screen and (max-width: 225px) {
 
