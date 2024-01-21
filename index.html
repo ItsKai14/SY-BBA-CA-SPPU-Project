@@ -11,51 +11,107 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img class="logo-icon" src="./images/new-pc-icon.png" alt=""> &nbsp;&nbsp;&nbsp;
-                <h1 class="logo-txt">SpecsCraft</h1>
+    <div class="top-bar">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img class="logo-icon" src="./images/new-pc-icon.png" alt=""> &nbsp;&nbsp;&nbsp;
+                    <h1 class="logo-txt">SpecsCraft</h1>
+                </div>
+                <div class="hamburger-icon">
+                    <button class="hamburger"><img class="icon" src="./images/hamburger.png" alt=""></button>
+                </div>
             </div>
-            <div class="hamburger-icon">
-                <button class="hamburger"><img class="icon" src="./images/hamburger.png" alt=""></button>
+        </header>
+    </div>
+    <div class="nav-menu">
+        <nav class="menu">
+            <pre class="close-menu"><button class="close-btn" style="color: black; font-size: large;">X</button></pre>
+            <div class="menu-content">
+                <div class="nav" onclick="window.location.href = './shop.html';"><img class="menu-icon" src="./images/shopping-bag.png" alt="Shop">&nbsp; <b>View Shop Page</b></div>
+                <div class="nav"><img class="menu-icon" src="./images/information.png" alt="Information">&nbsp; <b>Know More About Us</b></div>
+                <div class="nav"><img class="menu-icon" src="./images/chat.png" alt="Chat">&nbsp; <b>Start A quick Conversation</b></div>
             </div>
-        </div>
-    </header>
-    <nav class="menu">
-        <pre class="close-menu"><button class="close-btn" style="color: black; font-size: large;">X</button></pre>
-        <div class="menu-content">
-            <div class="nav" onclick="window.location.href = './shop.html';"><img class="menu-icon" src="./images/shopping-bag.png" alt="Shop">&nbsp; <b>View Shop</b></div>
-            <div class="nav"><img class="menu-icon" src="./images/information.png" alt="Information">&nbsp; <b>Know More About Us</b></div>
-            <div class="nav"><img class="menu-icon" src="./images/chat.png" alt="Chat">&nbsp; <b>Start A quick Conversation</b>
-            </div>
-        </div>
-    </nav>
-    <div class="rero" style="background-image: url(./images/girl-comp-bg.jpg);">
+        </nav>
+    </div>
+    <div class="rero" style="margin: 0;" id="rero">
         <div class="disc1">
             <section>
                 <div class="s1">
                     <small id="sm1">SpecsCraft</small>
                     <h3 class="h3">Your Satisfaction</h3>
-                    <h1 class="h1">is Our <b>1<sup style="font-size: xx-large;">St</sup> Priority</b></h1>
+                    <h1 class="h1">is Our <b>1<sup>St</sup> Priority</b></h1>
                     <button class="enter-shop" onclick="window.location.href = '';">Enter Shop</button>
                 </div>
             </section>
         </div>
     </div>
     <div class="roro">
-        <h1 style="font-size: xxx-large;">Categories</h1>
+        <h1 class="head-2">Categories</h1>
         <div ng-app="myApp" ng-controller="CardController">
             <div class="card" ng-repeat="card in cards">
               <img ng-src="{{ card.image }}" alt="{{ card.name }}">
               <b><hr></b>
               <h2>{{ card.name }}</h2>
               <p>{{ card.description }}</p>
-              <a href="{{ card.href }}"><button class="card-btn">View {{ card.name }}</button></a>
+              <a href="./Modules/Categories/{{ card.href }}"><button class="card-btn">View {{ card.name }}</button></a>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <div class="footer-column" style="display: flex; justify-content: center; margin: 1rem;">
+                    <img src="./images/new-pc-icon.png" alt="logo" style="width: 120px; height: 120px;">
+                    <h1 style="font-size: 50px; margin-left: 1rem; color: aliceblue;">SpecsCraft</h1>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Return & Cancellation Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Shop by Category</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Office Address: <a href="https://www.google.com/maps/place/Maharashtra+Education+Society's+MES+Senior+College,+Pune/@18.5044433,73.814579,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf97c94a3ac5:0x2d206438c4641c30!8m2!3d18.5044382!4d73.8171539!16s%2Fg%2F11q951229f?hl=en&entry=ttu" target="_blank"><i class="fab fa-facebook-f"></i>MES Senior College, Mayur Colony, kothrud, Pune 411058</a></li>
+                    <li>Phone: <a href="tel:+917541482814"><i class="fab fa-twitter"></i> +91-75414 82814</a> 10am-6pm (Mon-Sat)</li>
+                    <li>Mail: <a href="mailto:support.specscraft@gmail.com"><i class="fab fa-instagram"></i>support.specscraft@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Socials</h3>
+                <div class="img-div">
+                    <div class="img-container"><img src="./images/facebook.png" class="social" alt="Facebook"></div>
+                    <div class="img-container"><img src="./images/instagram.png" class="social" alt="Instagram"></div>
+                    <div class="img-container"><img src="./images/linkedin.png" class="social" alt="LinkedIn"></div>
+                </div>
+            </div>
+            <div class="top-button">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="top-arrow" class="top-arrow"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; 2024 <a class="footer-link" href="#rero" style="transition: all 5s ease-in-out;">SpecsCraft</a>. All rights reserved.
+            </p>
+        </div>
+    </footer>
     <script src="./Libraries/Hamburger/hamburger.js"></script>
 </body>
-
 </html>

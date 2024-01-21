@@ -104,6 +104,8 @@ header {
 
 .carousel-1{
     width: 40rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
 }
 
 @keyframes slide-in {
