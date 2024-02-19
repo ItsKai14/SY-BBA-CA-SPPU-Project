@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WxD Studio</title>
     <link rel="stylesheet" href="./StyleSheets/style.css">
+    <link rel="icon" sizes="200x200" href="./images/pc-tower.png">
     <script src="./Libraries/Sources/angular.min.js"></script>
-    <script src="./Libraries/Card/cards.js"></script>
+    <script src="./Libraries/Card/geners.js"></script>
 </head>
 
 <body>
@@ -41,20 +42,21 @@
                     <small id="sm1">SpecsCraft</small>
                     <h3 class="h3">Your Satisfaction</h3>
                     <h1 class="h1">is Our <b>1<sup>St</sup> Priority</b></h1>
-                    <button class="enter-shop" onclick="window.location.href = '';">Enter Shop</button>
+                    <button class="enter-shop" onclick="window.location.href = './shop.html';">Enter Shop</button>
                 </div>
             </section>
         </div>
     </div>
     <div class="roro">
-        <h1 class="head-2">Categories</h1>
-        <div ng-app="myApp" ng-controller="CardController">
-            <div class="card" ng-repeat="card in cards">
-              <img ng-src="{{ card.image }}" alt="{{ card.name }}">
-              <b><hr></b>
-              <h2>{{ card.name }}</h2>
-              <p>{{ card.description }}</p>
-              <a href="./Modules/Categories/{{ card.href }}"><button class="card-btn">View {{ card.name }}</button></a>
+        <div class="cats">
+            <p style="font-size: xx-large; color: rgb(58, 58, 58); margin-left: 18rem; padding-top: 2rem;">Shop For</p>
+            <div ng-app="shopApp" ng-controller="shopCtrl" class="shopCat">
+                <div class="card" ng-repeat="card in cards">
+                <img ng-src="{{ card.image }}" alt="{{ card.name }}">
+                <b><hr></b>
+                <h2>{{ card.name }}</h2>
+                <a href="./Modules/Categories/{{ card.href }}"><button class="card-btn">View {{ card.name }}</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -89,9 +91,9 @@
             <div class="footer-column">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li>Office Address: <a href="https://www.google.com/maps/place/Maharashtra+Education+Society's+MES+Senior+College,+Pune/@18.5044433,73.814579,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf97c94a3ac5:0x2d206438c4641c30!8m2!3d18.5044382!4d73.8171539!16s%2Fg%2F11q951229f?hl=en&entry=ttu" target="_blank"><i class="fab fa-facebook-f"></i>MES Senior College, Mayur Colony, kothrud, Pune 411058</a></li>
-                    <li>Phone: <a href="tel:+917541482814"><i class="fab fa-twitter"></i> +91-75414 82814</a> 10am-6pm (Mon-Sat)</li>
-                    <li>Mail: <a href="mailto:support.specscraft@gmail.com"><i class="fab fa-instagram"></i>support.specscraft@gmail.com</a></li>
+                    <li>Office Address: <a href="https://www.google.com/maps/place/Maharashtra+Education+Society's+MES+Senior+College,+Pune/@18.5044433,73.814579,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf97c94a3ac5:0x2d206438c4641c30!8m2!3d18.5044382!4d73.8171539!16s%2Fg%2F11q951229f?hl=en&entry=ttu" target="_blank"><i class="fab fa-facebook-f"></i>304, WxD Studios, MES Senior College, Mayur Colony, kothrud, Pune 411058</a></li>
+                    <li>Phone: <a href="tel:+917541482814"> +91-75414 82814</a> 10am-6pm (Mon-Sat)</li>
+                    <li>Mail: <a href="mailto:support.specscraft@gmail.com">support.specscraft@gmail.com</a></li>
                 </ul>
             </div>
             <div class="footer-column">

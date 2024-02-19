@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | SpecsCraft</title>
+    <link rel="icon" sizes="200x200" href="/images/pc-tower.png">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: tahoma;
+        }
+
+        .top-head{
+            width: 18.5%;
+            margin: auto;
+            margin-bottom: 5rem;
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            border: solid 1px gray;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.3);
+        }
+
+        #login-signup-form{
+            width: 15.2%;
+            margin: auto;
+            padding: 3rem;
+            border: solid 1px gray;
+            border-radius: 4px;
+            box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo{
+            font-family: 'Comic Sans MS', cursive;
+            margin: 0 3.5rem 1.5rem 3.5rem;
+        }
+
+        #signup{
+            width: 17.4rem;
+            height: 1.4rem;
+            padding: 0.3rem;
+            margin-bottom: 0.375rem;
+        }
+
+        #candName{
+            width: 17.4rem;
+            height: 1.4rem;
+            padding: 0.3rem;
+            margin-bottom: 0.375rem;
+        }
+
+        #username{
+            width: 17.4rem;
+            height: 1.4rem;
+            padding: 0.3rem;
+            margin-bottom: 0.375rem;
+        }
+
+        #password{
+            width: 17.4rem;
+            height: 1.4rem;
+            padding: 0.3rem;
+            margin-bottom: 0.375rem; 
+        }
+
+        #sign-up{
+            color: white;
+            width: 18.3rem;
+            height: 1.8rem;
+            margin-top: 0.5rem;
+            background-color: rgb(80, 167, 248);
+            border: solid 0.3px grey;
+            border-radius: 0.1rem;
+            cursor: pointer;
+        }
+
+        #sign-up:hover{
+            background-color: rgb(32, 121, 236);
+            box-shadow: 0px 0px 5px 2px rgba(1, 103, 255, 0.35);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .log-in{
+            width: 18.5%;
+            font-size: 0.9rem;
+            margin: auto;
+            margin-bottom: 5rem;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 1rem;
+            border: solid 1px gray;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.3);
+        }
+
+        a{
+            color: grey;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: rgb(12, 85, 180);
+        }
+
+        a:visited{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="top-head">Sign Up</h1>
+
+    <div id="login-signup-form">
+
+        <!-- Customer Sign Up Form -->
+        <form action="" method="get">
+            <h1 class="logo">SpecsCraft</h1>
+
+            <p style="text-align: center; color: rgb(71, 70, 70); font-size: 14px; margin-bottom: 1rem;">Sign up to track orders and check availability of products in your area.</p>
+
+            <!-- Google Sign in button -->
+            <div id="my-signin2"></div>
+
+            <p style="text-align: center; margin: 1rem 0 2rem 0; color: grey;">--------------------- &nbsp;&nbsp;OR&nbsp;&nbsp; --------------------</p>
+
+            <!-- Input Areas For User Sign Up -->
+            <label for="signup"><input type="email" id="signup" name="signup" placeholder="E-mail" required></label>
+            <br>
+            <label for="name"><input type="text" id="candName" name="candName" placeholder="Full Name" required></label>
+            <br>
+            <label for="username"><input type="text" id="username" name="username" placeholder="Username" required></label>
+            <br>
+            <label for="password"><input type="password" id="password" name="password" placeholder="Password" required></label>
+            <br>
+
+            <!-- Terms and Privacy Policy Message -->
+            <p style="color: grey; text-align: center; font-size: 12px; margin: 10px;">By signing up, You agree to our <a href="">Terms</a>, <a href="">Privacy Policy</a>.</p>
+
+            <!-- Sign up button -->
+            <button type="submit" id="sign-up">Sign Up</button>
+
+        </form>
+    </div>
+
+    <!-- Old user log in -->
+    <div class="log-in">
+        <p>Have an Account? <a href="./log-in.html">Log In</a></p>
+    </div>
+
+    <!-- Script for Sign in with Google Button -->
+    <script>
+        function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+        function onFailure(error) {
+            console.log(error);
+        }
+        function renderButton() {
+            gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 293,
+                'height': 40,
+                'longtitle': true,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+            });
+        }
+    </script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+</body>
+</html>
