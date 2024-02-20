@@ -3,26 +3,32 @@
 
 const logIn = angular.module('loginApp', [])
 logIn.controller('loginCtrl', function ($scope) {
-    $scope.creds = [
-        { username: 'Hemant21', password: 'hemant414' },
-        { username: 'whitexdevil', password: 'whitedevil' },
+
+    $scope.username = '';
+    $scope.password = '';
+
+    $scope.logInData = [
+        { username: 'hemant21', password: 'hemant14' },
+        { username: 'white_x_devil', password: 'whitedevil' },
+        { username: 'parth_r', password: 'parth12' },
+        { username: 'wild_wizard', password: 'wildwizards' },
     ];
 
     $scope.login = function () {
-        for (var i = 0; i < $scope.creds.length; i++) {
-            if ($scope.creds[i].username === $scope.username && $scope.creds[i].password === $scope.password) {
+        for (var i = 0; i < $scope.logInData.length; i++) {
+            if ($scope.username === $scope.logInData[i].username && $scope.password === $scope.logInData[i].password) {
                 localStorage.setItem('currentUser', $scope.username);
                 localStorage.setItem('isLoggedIn', true);
                 $scope.error = 'Success!';
-                window.alert("Logged in as: "+$scope.username+".");
+                window.alert("Logged in as: "+$scope.logInData[i].username+".");
                 window.setTimeout(() => {
                     window.close();
-                }, 2000);
+                }, 1414);
+                return;
             } else {
                 localStorage.setItem('isLoggedIn', false);
                 $scope.error = 'Username or Password does not match with the records';
-            }
-            return;
+            }  
         };
     };
 });
