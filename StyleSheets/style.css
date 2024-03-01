@@ -14,6 +14,22 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 3rem;
+    cursor: pointer;
+    color: azure;
+}
+
+nav li:hover {
+    color: rgb(48, 186, 250);
+}
+
 .rero {
     width: 100%;
     height: 100vh;
@@ -79,59 +95,189 @@ small {
 .roro{
     width: 100%;
     height: 80vh;
+    margin-bottom: auto;
+    padding-bottom: 1rem;
 }
 
 .roro h1 {
+    margin-top: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 
-.cats {
-    padding-bottom: 2rem;
+.data {
+    margin: 6rem 6rem 1rem 6rem;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 2rem;
 }
 
-.shopCat {
-    margin-left: 18rem;
-    margin-right: 17rem;
+.data2 {
+    margin: 1rem 6rem 1rem 44rem;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-right: 2rem;
 }
 
-/*CSS For Cards*/
-.card {
-    width: 10rem;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 1rem;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
-    display: inline-block;
+.data3 {
+    margin: 1rem 6rem 1rem 6rem;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 1.2rem;
 }
 
-.card img {
-    width: 98%;
+.data4 {
+    margin: 1rem 6rem 1rem 44rem;
+    display: inline-flex;
+    justify-content: space-between; 
+    padding-right: 2rem;
 }
 
-.card a {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.card-btn {
-    width: 100%;
-    font-size: medium;
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: all 0.15s ease-in;
     cursor: pointer;
-    height: 2.4rem;
-    border-radius: 1rem;
-    background-color: transparent;
+}
+
+.title-img {
+    width: fit-content;
+}
+
+.title-img2 {
+    width: fit-content;
+}
+
+.title-img3 {
+    width: fit-content;
+}
+
+.title-img4 {
+    width: fit-content;
+}
+
+.title-img img {
+    width: 20rem;
+}
+
+.title-img2 img {
+    width: 20rem;
+}
+
+.title-img3 img {
+    width: 20rem;
+}
+
+.title-img4 img {
+    width: 20rem;
+}
+
+.title-img h2 {
+    text-align: center;
+}
+
+.title-img2 h2 {
+    text-align: center;
+}
+
+.title-img3 h2 {
+    text-align: center;
+}
+
+.title-img4 h2 {
+    text-align: center;
+}
+
+.sec-data {
+    color: #575555;
+    margin: 4rem;
+    font-size: x-large;
+    width: 40rem;
+}
+
+.sec-data2 {
+    color: #575555;
+    margin: 4rem;
+    font-size: x-large;
+    width: 40rem;
+}
+
+.sec-data3 {
+    color: #575555;
+    margin: 4rem;
+    font-size: x-large;
+    width: 40rem;
+}
+
+.sec-data4 {
+    color: #575555;
+    margin: 4rem;
+    font-size: x-large;
+    width: 40rem;
+}
+
+.shop-btn {
+    color: #575555;
+    width: 15rem;
+    height: 2.3rem;
+    background: transparent;
+    border: solid 1.4px black;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.shop-btn2 {
+    color: #575555;
+    width: 15rem;
+    height: 2.3rem;   
+    background: transparent;
+    border: solid 1.4px black;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.shop-btn3 {
+    color: #575555;
+    width: 15rem;
+    height: 2.3rem;
+    background: transparent;
+    border: solid 1.4px black;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.shop-btn4 {
+    color: #575555;
+    width: 15rem;
+    height: 2.3rem;
+    background: transparent;
+    border: solid 1.4px black;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.shop-btn:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.175);
     transition: all 0.4s ease-in-out;
 }
 
-.card-btn:hover {
-    background-color: rgba(33, 152, 250, 0.8);
-    box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.4);
-    color: #fff;
-    font-weight: bolder;
-    transition: all 0.7s ease-in-out;
+.shop-btn2:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.175);
+    transition: all 0.4s ease-in-out;
+}
+
+.shop-btn3:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.175);
+    transition: all 0.4s ease-in-out;
+}
+
+.shop-btn4:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.175);
+    transition: all 0.4s ease-in-out;
 }
 
 .rero::-webkit-scrollbar {
@@ -327,9 +473,8 @@ b {
 
 footer {
     background-color: #333;
-    /* Adjust background color as desired */
     padding: 20px 0;
-    /* Center content horizontally */
+    margin-top: 60%;
 }
 
 .footer-logo {

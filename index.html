@@ -16,9 +16,15 @@
         <header>
             <div class="container">
                 <div class="logo">
-                    <img class="logo-icon" src="./images/new-pc-icon.png" alt=""> &nbsp;&nbsp;&nbsp;
+                    <img class="logo-icon" src="./images/new-pc-icon.png" alt="logo"> &nbsp;&nbsp;&nbsp;
                     <h1 class="logo-txt">SpecsCraft</h1>
                 </div>
+                <nav>
+                    <li onclick="window.location.href = '#data';">Intel PC</li>
+                    <li onclick="window.location.href = '#data2';">Ryzen PC</li>
+                    <li onclick="window.location.href = '#data3';">Latops</li>
+                    <li onclick="window.location.href = '#data4';">Accessories</li>
+                </nav>
                 <div class="hamburger-icon">
                     <button class="hamburger"><img class="icon" src="./images/hamburger.png" alt=""></button>
                 </div>
@@ -48,17 +54,55 @@
         </div>
     </div>
     <div class="roro">
-        <div class="cats">
-            <p style="font-size: xx-large; color: rgb(58, 58, 58); margin-left: 18rem; padding-top: 2rem;">Shop For</p>
-            <div ng-app="shopApp" ng-controller="shopCtrl" class="shopCat">
-                <div class="card" ng-repeat="card in cards">
-                <img ng-src="{{ card.image }}" alt="{{ card.name }}">
-                <b><hr></b>
-                <h2>{{ card.name }}</h2>
-                <a href="./Modules/Categories/{{ card.href }}"><button class="card-btn">View {{ card.name }}</button></a>
-                </div>
+        <h1>SHOP FOR</h1>
+        <section class="data card" id="data">
+            <div class="title-img">
+                <img src="./Libraries/Card/assets/Intel.jpg" alt="intel PC">
+                <h2>INTEL PC</h2>
             </div>
-        </div>
+            <div class="sec-data">
+                <p>
+                    Intel PCs are computers that use processors made by Intel Corporation, a leading manufacturer of computer components. The term encompasses a wide range of devices, from budget-friendly desktops to high-end gaming desktops and powerful workstations.
+                </p>
+                <button class="shop-btn">View Intel PC</button>
+            </div>
+        </section>
+        <section class="data2 card" id="data2">
+            <div class="sec-data2">
+                <p>
+                    Ryzen PCs are computers that use processors made by AMD, specifically their Ryzen line of CPUs. These processors are known for their performance, affordability, and multi-core capabilities, making them popular choices for various users like gamers, creators, and professionals.
+                </p>
+                <button class="shop-btn2">View Ryzen PC</button>
+            </div>
+            <div class="title-img2">
+                <img src="./Libraries/Card/assets/AMD Ryzen.jpg" alt="AMD PC">
+                <h2>RYZEN PC</h2>
+            </div>
+        </section>
+        <section class="data3 card" id="data3">
+            <div class="title-img3">
+                <img src="./Libraries/Card/assets/laptops.png" alt="Laptops">
+                <h2>Laptops</h2>
+            </div>
+            <div class="sec-data3">
+                <p>
+                    Laptops, also known as notebooks, are portable computers that offer a blend of power and portability. They're a popular choice for students, professionals, and anyone who needs a computer on the go. But with so many options available, choosing the right laptop can be overwhelming.
+                </p>
+                <button class="shop-btn3">View Laptops</button>
+            </div>
+        </section>
+        <section class="data4 card" id="data4">
+            <div class="sec-data4">
+                <p>
+                    Computer accessories are a diverse collection of items that enhance the functionality and user experience of your computer. They go beyond the basic components like the monitor, keyboard, and mouse, and cater to a wide range of needs and preferences.
+                </p>
+                <button class="shop-btn4">View Accessories</button>
+            </div>
+            <div class="title-img4">
+                <img src="./Libraries/Card/assets/Accessories.jpg" alt="AAccessories">
+                <h2>Accessories</h2>
+            </div>
+        </section>
     </div>
     <footer>
         <div class="footer-top">
@@ -105,7 +149,7 @@
                 </div>
             </div>
             <div class="top-button">
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="top-arrow" class="top-arrow"></a>
+                <a href="/#"><img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="top-arrow" class="top-arrow"></a>
             </div>
         </div>
         <div class="footer-bottom">
