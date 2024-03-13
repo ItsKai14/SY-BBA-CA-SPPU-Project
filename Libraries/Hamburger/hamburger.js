@@ -9,3 +9,4 @@ hamburger.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => { //event listener for close option
     menu.classList.remove('open');
 });
+

@@ -113,14 +113,14 @@ small {
 }
 
 .data2 {
-    margin: 1rem 6rem 1rem 44rem;
+    margin: 6rem 6rem 1rem 44rem;
     display: inline-flex;
     justify-content: space-between;
     padding-right: 2rem;
 }
 
 .data3 {
-    margin: 1rem 6rem 1rem 6rem;
+    margin: 6rem 6rem 1rem 6rem;
     display: inline-flex;
     justify-content: space-between;
     padding-left: 2rem;
@@ -128,7 +128,7 @@ small {
 }
 
 .data4 {
-    margin: 1rem 6rem 1rem 44rem;
+    margin: 6rem 6rem 1rem 44rem;
     display: inline-flex;
     justify-content: space-between; 
     padding-right: 2rem;
@@ -290,10 +290,10 @@ small {
 }
 
 header {
+    display: inline-flex;
     width: 70%;
     position: fixed;
     margin-top: 0.5rem;
-    padding-bottom: 5px;
     background-color: #333;
     color: aliceblue;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
@@ -319,11 +319,154 @@ header {
 }
 
 .container {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.container2 {
+    width: 13rem;
+    margin: 1.8rem 0rem 0 10rem;
+    display: inline-flex;
+}
+
+#search {
+    width: 10rem;
+    height: 2rem;
+    margin: 0;
+    border: solid 1px black;
+    border-radius: 0.8rem;
+    padding: 8px;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+    margin: 0 0 1.5rem 0;
+}
+
+#search-img {
+    width: auto;
+    cursor: pointer;
+}
+
+#log-in {
+    margin: 2.1rem 0 0 3rem;
+    padding: auto;
+}
+
+.container3 {
+    width: min-content;
+    margin: 2rem 0 0 0rem;
+    cursor: pointer;
+}
+
+#count{
+    position: absolute;
+    top: 1rem;
+    right: 8.8rem;
+    background-color: #89bfec;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.roro hr {
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    border-color: black;
+}
+
+
+.rara hr {
+    height: 2px;
+    background-color: black;
+    border-color: black;
+}
+
+
+.services {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 6rem;
+}
+
+.s-1 {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.s-2 {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 5.5rem;
+}
+
+.s-3 {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 5.5rem;
+}   
+
+.s-4 {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 5.5rem;
+}
+
+.shead {
+    margin-left: 1rem;
+}
+
+.stxt {
+    color: #575555;
+    width: 10rem;
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+
+#img {
+    width: 10rem;
+}
+
+.faq-section {
+    margin: 6rem;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    /* question button */
+    background-color: #eee;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+}
+
+.faq-answer {
+    /* Styles for answer element */
+    padding: 10px;
+    display: none;
+    /* Initially hidden */
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+    /* Show */
+}
+
 
 /* Hamburger button */
 .hamburger {
@@ -333,7 +476,6 @@ header {
     border: none;
     cursor: pointer;
     font-size: 24px;
-    padding: 10px;
 }
 
 .hamburger:checked+.open {
@@ -344,12 +486,6 @@ header {
 .icon {
     width: 1em;
     height: 1em;
-}
-
-.icon:hover {
-    border: solid rgb(74, 162, 235) 1px;
-    transition: all 0.2s ease-in-out;
-    padding: 2px;
 }
 
 .nav-menu {
@@ -474,7 +610,7 @@ b {
 footer {
     background-color: #333;
     padding: 20px 0;
-    margin-top: 60%;
+    margin-top: 150%;
 }
 
 .footer-logo {
