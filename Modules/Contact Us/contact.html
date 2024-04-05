@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | WxD Studio</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="icon" sizes="200x200" href="./images/pc-tower.png">
+    <script src="./Libraries/Sources/angular.min.js"></script>
+    <script src="./Libraries/Card/geners.js"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img class="logo-icon" src="../../images/new-pc-icon.png" alt="logo"> &nbsp;&nbsp;&nbsp;
+                    <h1 class="logo-txt">SpecsCraft</h1>
+                </div>
+                <nav>
+                    <li onclick="window.location.href = '../../index.html#rero';">Home</li>
+                    <li onclick="window.location.href = '../../index.html#d1';">Intel PC</li>
+                    <li onclick="window.location.href = '../../index.html#d2';">Ryzen PC</li>
+                    <li onclick="window.location.href = '../../index.html#d3';">Latops</li>
+                    <li onclick="window.location.href = '../../index.html#d4';">Accessories</li>
+                </nav>
+            </div>
+            <div class="container2">
+                <label for="search"><input type="search" name="search" id="search" placeholder="Search Products"></label>
+                <button class="search-btn" type="submit"><img src="../../images/search.png" alt="search icon" width="32" height="32" id="search-img"></button>
+            </div>
+            <div class="container3" onclick="window.location.href='../../Modules/Shopping Cart/cart.html';">
+                <img src="../../images/cart.png" alt="cart image" width="32" height="32">
+                <p id="count">4</p>
+            </div>
+            <nav>
+                <a href="../Sign Up-Log In/log-in.html" target="_blank"><li id="log-in">Log In</li></a>
+            </nav>
+        </header>
+    </div>
+    <div class="rero">
+        <p class="headTxt">
+            <strong>Contact Us</strong>
+        </p>
+        <form action="" method="">  
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+    
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Your Email">
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+    
+            <button class="submit-button" type="submit">Send Message</button>
+        </form>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="footer-column" style="display: flex; justify-content: center; margin: 1rem;">
+                        <img src="../../images/new-pc-icon.png" alt="logo" style="width: 120px; height: 120px;">
+                        <h1 style="font-size: 50px; margin-left: 1rem; color: aliceblue;">SpecsCraft</h1>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="../../../index.html#faq">FAQs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#d1">Shop by Category</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Office Address: <a href="https://www.google.com/maps/place/Maharashtra+Education+Society's+MES+Senior+College,+Pune/@18.5044433,73.814579,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf97c94a3ac5:0x2d206438c4641c30!8m2!3d18.5044382!4d73.8171539!16s%2Fg%2F11q951229f?hl=en&entry=ttu" target="_blank"><i class="fab fa-facebook-f"></i>304, WxD Studios, MES Senior College, Mayur Colony, kothrud, Pune 411058</a></li>
+                        <li>Phone: <a href="tel:+917541482814"> +91-75414 82814</a> 10am-6pm (Mon-Sat)</li>
+                        <li>Mail: <a href="mailto:contact.specscraft@gmail.com">contact.specscraft@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Socials</h3>
+                    <div class="img-div">
+                        <div class="img-container"><img src="../../images/facebook.png" class="social" alt="Facebook"></div>
+                        <div class="img-container"><img src="../../images/instagram.png" class="social" alt="Instagram"></div>
+                        <div class="img-container"><img src="../../images/linkedin.png" class="social" alt="LinkedIn"></div>
+                    </div>
+                </div>
+                <div class="top-button">
+                    <a href="/#"><img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="top-arrow" class="top-arrow"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 <a class="footer-link" href="#rero" style="transition: all 5s ease-in-out;">SpecsCraft</a>. All rights reserved.
+                </p>
+            </div>
+        </footer>   
+    </div> 
+    <script src="./Libraries/Hamburger/hamburger.js"></script>
+    <script src="./Libraries/FAQ's/faq.js"></script>
+</body>
+</html>

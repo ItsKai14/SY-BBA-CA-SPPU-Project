@@ -460,7 +460,7 @@ hr {
 }
 
 .viewed {
-    margin: 2rem 0rem 2rem 6rem;
+    margin: 6rem 0rem 2rem 6rem;
 }
 
 .prodCard {
@@ -840,22 +840,6 @@ footer {
 
 
 /* keyframes +To Perform Animations */
-
-@keyframes slide-in {
-
-    /* For Opened Menu Buttons */
-
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-}
 
 @keyframes slide-in-2 {
 
