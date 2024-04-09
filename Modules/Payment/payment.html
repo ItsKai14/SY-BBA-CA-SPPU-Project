@@ -521,45 +521,63 @@
         /* payment section */
 
         .payment-form {
-            width: 30rem;
-            margin: 50px auto;
+            max-width: 400px;
+            margin: 2rem auto;
             padding: 2rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            border: 1px solid #e4e4e4;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .payment-form h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 0.5rem;
         }
 
-        .form-group input {
-            width: 95%;
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        .form-group input[type="text"] {
+            width: 96%;
+            padding: 0.75rem 0 0.75rem 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group img.card-logos {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 24px;
         }
 
         .btn {
+            display: block;
             width: 100%;
-            background-color: #536cf8;
-            color: white;
-            padding: 10px 20px;
+            padding: 0.5rem;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
+            background: #007bff;
+            color: white;
+            font-size: 1rem;
             cursor: pointer;
+            transition: background 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #2f60ff;
+            background: #016cdf;
         }
-
-
-
 
 
         /* Footer Section */
@@ -720,14 +738,18 @@
         <div class="payment">
             <div class="payment-form">
                 <h2>Payment Details</h2>
-                <form action="/submit-payment" method="post">
+                <form action="" method="post" onsubmit="return validatePaymentForm()">
                     <div class="form-group">
                         <label for="cardNumber">Card Number</label>
-                        <input type="text" id="cardNumber" name="cardNumber" required>
+                        <div class="input-group">
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000"
+                                required>
+                            <img src="./logo.jpeg" alt="Card Logos" class="card-logos">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="cardName">Cardholder Name</label>
-                        <input type="text" id="cardName" name="cardName" required>
+                        <input type="text" id="cardHolderName" name="cardName" required>
                     </div>
                     <div class="form-group">
                         <label for="expiryDate">Expiry Date</label>
@@ -807,22 +829,56 @@
     </div>
     <script>
 
-        //Previous Page
-        const backBtn = document.getElementById('back-btn');
-        backBtn.addEventListener('click', () => {
-            window.history.back();
-        });
+        function validatePaymentForm() {
+            var cardNumber = document.getElementById('cardNumber').value;
+            var expiryDate = document.getElementById('expiryDate').value;
+            var cvv = document.getElementById('cvv').value;
+            var cardHolderName = document.getElementById('cardHolderName').value;
 
-        //Next Product Image
-        function changeImage(src) {
-            document.getElementById('main-image').src = src;
+            // Validate Card Number
+            if (!luhnCheck(cardNumber)) {
+                alert('Please enter a valid card number.');
+                return false;
+            }
+
+            // Validate Expiry Date
+            if (!expiryDate.match(/^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$/)) {
+                alert('Please enter a valid expiry date.');
+                return false;
+            }
+
+            // Validate CVV
+            if (!cvv.match(/^\d{3,4}$/)) {
+                alert('Please enter a valid CVV.');
+                return false;
+            }
+
+            // Validate Cardholder Name
+            if (cardHolderName === '') {
+                alert('Please enter the cardholder name.');
+                return false;
+            }
+
+            // Add more validations as needed
+
+            return true; // If all validations pass
         }
 
-        //Top Button
-        const topBtn = document.querySelector('.footer-link');
-        topBtn.addEventListener('click', () => {
-            window.scroll(0, 0);
-        });
+        // Luhn Algorithm for card number validation
+        function luhnCheck(val) {
+            var sum = 0;
+            for (var i = 0; i < val.length; i++) {
+                var intVal = parseInt(val.substr(i, 1));
+                if (i % 2 == 0) {
+                    intVal *= 2;
+                    if (intVal > 9) {
+                        intVal = 1 + (intVal % 10);
+                    }
+                }
+                sum += intVal;
+            }
+            return (sum % 10) == 0;
+        }
 
     </script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
