@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unleash Your Gaming Potential with a Custom gaming PC | WxD Studio</title>
+    <link rel="icon" sizes="200x200" href="/images/pc-tower.png">
+    <link rel="stylesheet" href="card.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-family: tahoma;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            background-color: white;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            display: inline-flex;
+            width: 70%;
+            position: fixed;
+            margin-top: 0.5rem;
+            background-color: #333;
+            color: aliceblue;
+            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .logo {
+            display: inline-flex;
+            width: min-content;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: pointer;
+        }
+
+        .logo-icon {
+            width: 3rem;
+            height: 3rem;
+            margin-top: 0.5em;
+            margin-left: 2rem;
+        }
+
+        .logo-txt {
+            font-size: 26px;
+            width: 100%;
+        }
+
+        .container {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container2 {
+            width: max-content;
+            margin: 1.8rem 0rem 0 10rem;
+            display: inline-flex;
+        }
+
+        #search {
+            width: 10rem;
+            height: 2rem;
+            margin: 0;
+            border: solid 1px black;
+            border-radius: 0.8rem;
+            padding: 8px;
+        }
+
+        .search-btn {
+            background-color: transparent;
+            border: none;
+            margin: 0 0 1.5rem 0;
+        }
+
+        #search-img {
+            width: auto;
+            cursor: pointer;
+        }
+
+        nav {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav li {
+            list-style-type: none;
+            margin-left: 3rem;
+            cursor: pointer;
+            color: azure;
+        }
+
+        nav:nth-child(5) {
+            margin-right: 0;
+        }
+
+        nav li:hover {
+            color: rgb(48, 186, 250);
+        }
+
+        #log-in {
+            margin: 2.1rem 0 0 3rem;
+            padding: auto;
+        }
+
+        .container3 {
+            width: min-content;
+            margin: 2rem 0 0 0rem;
+            cursor: pointer;
+        }
+
+        #count {
+            position: absolute;
+            top: 1rem;
+            right: 9rem;
+            background-color: #89bfec;
+            color: rgb(0, 0, 0);
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .rero {
+            margin: 12rem 0 0 6rem;
+        }
+
+        .rero p a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .rero p a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+
+        .blog-head {
+            width: 50%;
+        }
+
+        .blog-head p {
+            font-size: 14px;
+            text-align: left;
+            color: rgb(253, 49, 49);
+            margin: 0 0 0 0;
+        }
+
+        .blog-head .head {
+            font-size: xx-large;
+            color: #333;
+            margin: 0 0 0 0;
+        }
+
+        .rero center img {
+            width: 57rem;
+            margin: 4rem 0 4rem 0;
+        }
+
+        .rero .blog-content {
+            width: 50%;
+        }
+
+        .rero .blog-content p {
+            color: #5e5e5e;
+            margin: 0 0 0 0;
+            font-size: 18px;
+            text-align: left;
+            line-height: 150%;
+        }
+
+        .rero .blog-content .sub-point {
+            margin: 1.5rem 0 0 0;
+            color: #504f4f;
+            font-weight: bold;
+        }
+
+        .rero .blog-content .end {
+            margin: 4rem 0 0 0;
+        }
+
+
+
+        /* Footer Section */
+
+        footer {
+            background-color: #333;
+            padding: 20px 0;
+            margin: 10rem 0 0 -6rem;
+        }
+
+        .footer-logo {
+            margin: 4rem;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            /* Spread columns evenly */
+        }
+
+        .footer-column {
+            flex-basis: 30%;
+            /* Adjust column widths as needed */
+        }
+
+        .footer-column h3 {
+            font-weight: bolder;
+            color: #fcefef;
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 1rem;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 1rem;
+            color: #fcefef;
+        }
+
+        .footer-column ul li a {
+            color: #fcefef;
+            text-decoration: none;
+        }
+
+        .footer-column ul li a:hover {
+            color: rgb(48, 186, 250);
+            transition: all 0.4s ease-in-out;
+            /* Highlight links on hover */
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #ffffff;
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+            text-align: center;
+            color: #fcefef;
+        }
+
+        .img-container {
+            width: 2rem;
+            height: 2rem;
+            margin-top: 1rem;
+            background-color: #fff;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        .img-container:hover {
+            background-color: rgb(30, 151, 250);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .img-div {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social {
+            width: 1rem;
+            margin: 0.5rem;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #fcefef;
+        }
+
+        .footer-link:hover {
+            color: #fcefef;
+        }
+
+        .footer-link:visited {
+            color: #fcefef;
+        }
+
+        .top-button {
+            width: 2rem;
+            height: 2rem;
+            margin-top: 16rem;
+            margin-right: 1rem;
+            background-color: #fff;
+            border-radius: 100%;
+        }
+
+        .top-button:hover {
+            background-color: #d4d1d1;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .top-arrow {
+            width: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img class="logo-icon" src="../../images/new-pc-icon.png" alt="logo"> &nbsp;&nbsp;&nbsp;
+                    <h1 class="logo-txt" onclick="window.location.href = '../../index.html';">SpecsCraft</h1>
+                </div>
+                <nav>
+                    <li onclick="window.location.href = '../../index.html';">Home</li>
+                    <li onclick="window.location.href = '../../index.html#d1';">Categories</li>
+                    <li onclick="window.location.href = '../../index.html#faq';">FAQ</li>
+                    <li onclick="window.location.href = '../Contact Us/contact.html';">Contact Us</li>
+                    <li onclick="window.location.href = '../About Us/about.html';">About Us</li>
+                </nav>
+            </div>
+            <div class="container2">
+                <label for="search"><input type="search" name="search" id="search" placeholder="Search Products"></label>
+                <button class="search-btn" type="submit"><img src="../../images/search.png" alt="search icon" width="32" height="32"
+                        id="search-img"></button>
+            </div>
+            <div class="container3" onclick="window.location.href='../Shopping Cart/cart.html';">
+                <img src="../../images/cart.png" alt="cart image" width="32" height="32">
+                <p id="count">4</p>
+            </div>
+            <nav>
+                <a href="../Sign Up-Log In/log-in.html" target="_blank">
+                    <li id="log-in">Log In</li>
+                </a>
+            </nav>
+        </header>
+    </div>
+    <div class="rero">
+        <p style="font-size: medium;"><span>‹</span> <a href="javascript:void(0)" id="back-btn">Go Back</a></p>
+        <center>
+            <div class="blog-head">
+                <p>Blog--feb 24, 2024</p>
+                <p class="head">Unleash Your Gaming Potential with a Custom gaming PC</p>
+            </div>
+        </center>
+        <center>
+            <img src="./blog pic/pexels-rdne-stock-project-7915280.jpg" alt="Gaming PC Image">
+        </center>
+        <center>
+            <div class="blog-content">
+                <p>In the dynamic world of gaming, where performance and personalization reign supreme, a custom gaming PC stands as the ultimate gateway to unlocking your gaming potential. Tailored to your specifications, a custom-built gaming rig offers unparalleled performance, aesthetics, and the ability to create a gaming experience that’s uniquely yours. In this blog, we’ll explore the many advantages of building a custom gaming PC and why it’s a choice that resonates with gamers of all levels.</p>
+                <p class="sub-point">The Power of Personalization:</p>
+                <p>One of the most compelling reasons to opt for a custom gaming PC is the power of personalization. With a custom build, you have complete control over every component, from the processor and graphics card to the cooling system and lighting effects. This level of customization empowers you to create a system that not only meets your gaming needs but also reflects your personality and style.</p>
+                <p class="sub-point">Tailored Performance:</p>
+                <p>Gaming is an incredibly diverse realm, encompassing a wide range of genres, graphics demands, and processing requirements. When you build a custom gaming PC, you have the freedom to choose components that are optimized for the type of gaming you enjoy. Whether you’re an eSports enthusiast seeking maximum frame rates or an RPG lover craving immersive visuals, a custom build allows you to tailor your rig’s performance accordingly.</p>
+                <p class="sub-point">Future-Proofing Your Investment:</p>
+                <p>The gaming industry is constantly evolving, with new titles pushing the boundaries of hardware capabilities. A custom gaming PC allows you to future-proof your investment by choosing components that are not just powerful today but also equipped to handle the demands of tomorrow’s games. This means you won’t need to upgrade as frequently, saving you both time and money in the long run.</p>
+                <p class="sub-point">Superior Performance:</p>
+                <p>Performance is the lifeblood of any gaming experience, and a custom-built PC delivers where it matters most. By selecting high-quality components that work in harmony, you can achieve superior performance that’s finely tuned to your gaming preferences. Overclocking options, advanced cooling solutions, and optimized hardware combinations ensure that your custom gaming PC performs at its peak potential.</p>
+                <p class="sub-point">Aesthetics and Visual Appeal:</p>
+                <p>Gaming isn’t just about what you play—it’s also about how you experience it. Aesthetics play a significant role in creating an immersive gaming environment, and a custom gaming PC lets you curate the visual appeal of your setup. From vibrant RGB lighting to sleek and minimalist designs, you can transform your rig into a work of art that enhances your gaming atmosphere.</p>
+                <p class="sub-point">The Joy of Building:</p>
+                <p>For many gamers, the process of building a custom gaming PC is an experience in itself. Learning about different components, researching compatibility, and assembling your machine can be incredibly rewarding. It’s a hands-on journey that allows you to deepen your understanding of your gaming hardware while also creating a sense of ownership over your gaming setup.</p>
+                <p class="sub-point">Community and Support</p>
+                <p>The custom PC building community is a vibrant and supportive space filled with enthusiasts who are eager to share their knowledge and experiences. Whether you’re a seasoned builder or a newcomer, you’ll find a wealth of resources, forums, and communities that can offer guidance, troubleshooting tips, and recommendations for creating the perfect custom gaming PC.</p>
+                <p class="sub-point">Conclusion</p>
+                <p>When it comes to gaming, a custom-built PC isn’t just a tool—it’s an extension of your passion and identity as a gamer. With the ability to tailor performance, aesthetics, and functionality to your liking, a custom gaming PC offers an unmatched level of immersion and satisfaction. As you embark on the journey of building your own rig, remember that it’s not just about the hardware—it’s about creating a gaming masterpiece that reflects your unique style and aspirations. So, whether you’re a competitive player or a casual gamer, a custom gaming PC is your ticket to a world of gaming excellence that’s truly one of a kind.</p>
+                <!-- <p class="end">Happy gaming! 😁</p> -->
+            </div>
+        </center>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="footer-column" style="display: flex; justify-content: center; margin: 1rem;">
+                        <img src="../../../images/new-pc-icon.png" alt="logo" style="width: 120px; height: 120px;">
+                        <h1 style="font-size: 50px; margin-left: 1rem; color: aliceblue;">SpecsCraft</h1>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="../../../Modules/Contact Us/contact.html">Contact Us</a></li>
+                        <li><a href="../About Us/about.html">About Us</a></li>
+                        <li><a href="../../../index.html#faq">FAQs</a></li>
+                        <li><a href="../Customers/customerReviews.html">Reviews</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="../../../index.html#d1">Shop by Category</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Office Address: <a
+                                href="https://www.google.com/maps/place/Maharashtra+Education+Society's+MES+Senior+College,+Pune/@18.5044433,73.814579,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf97c94a3ac5:0x2d206438c4641c30!8m2!3d18.5044382!4d73.8171539!16s%2Fg%2F11q951229f?hl=en&entry=ttu"
+                                target="_blank"><i class="fab fa-facebook-f"></i>304, WxD Studios, MES Senior College,
+                                Mayur Colony, kothrud, Pune 411058</a></li>
+                        <li>Phone: <a href="tel:+917541482814"> +91-75414 82814</a> 10am-6pm (Mon-Sat)</li>
+                        <li>Mail: <a href="mailto:contact.specscraft@gmail.com">contact.specscraft@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Socials</h3>
+                    <div class="img-div">
+                        <div class="img-container"><img src="../../../images/facebook.png" class="social"
+                                alt="Facebook"></div>
+                        <div class="img-container"><img src="../../../images/instagram.png" class="social"
+                                alt="Instagram"></div>
+                        <div class="img-container"><img src="../../../images/linkedin.png" class="social"
+                                alt="LinkedIn"></div>
+                    </div>
+                </div>
+                <div class="top-button">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="top-arrow" class="top-arrow"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 <span class="footer-link">SpecsCraft</span>. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+
+        //Previous Page
+        const backBtn = document.getElementById('back-btn');
+        backBtn.addEventListener('click', () => {
+            window.history.back();
+        });
+
+        //Top Button
+        const topBtn = document.querySelector('.footer-link');
+        topBtn.addEventListener('click', () => {
+            window.scroll(0, 0);
+        });
+
+    </script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="../../../Libraries/Card/prod1.js"></script>
+</body>
+
+</html>

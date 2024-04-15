@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews | WxD Studio</title>
+    <link rel="stylesheet" href="./reviews.css">
+    <link rel="icon" sizes="200x200" href="/images/pc-tower.png">
+    <script src="./Libraries/Sources/angular.min.js"></script>
+    <script src="./Libraries/Card/geners.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img class="logo-icon" src="../../images/new-pc-icon.png" alt="logo"> &nbsp;&nbsp;&nbsp;
+                    <h1 class="logo-txt" onclick="window.location.href = '../../index.html'">SpecsCraft</h1>
+                </div>
+                <nav>
+                    <li onclick="window.location.href = '../../index.html#rero';">Home</li>
+                    <li onclick="window.location.href = '../../index.html#d1';">Intel PC</li>
+                    <li onclick="window.location.href = '../../index.html#d2';">Ryzen PC</li>
+                    <li onclick="window.location.href = '../../index.html#d3';">Latops</li>
+                    <li onclick="window.location.href = '../../index.html#d4';">Accessories</li>
+                </nav>
+            </div>
+            <div class="container2">
+                <label for="search"><input type="search" name="search" id="search"
+                        placeholder="Search Products"></label>
+                <button class="search-btn" type="submit"><img src="../../images/search.png" alt="search icon" width="32"
+                        height="32" id="search-img"></button>
+            </div>
+            <div class="container3" onclick="window.location.href='../../Modules/Shopping Cart/cart.html';">
+                <img src="../../images/cart.png" alt="cart image" width="32" height="32">
+                <p id="count">4</p>
+            </div>
+            <nav>
+                <a href="../Sign Up-Log In/log-in.html" target="_blank">
+                    <li id="log-in">Log In</li>
+                </a>
+            </nav>
+        </header>
+    </div>
+    <div class="rero">
+        <p class="headTxt">
+            <strong>Contact Us</strong>
+        </p>
+        <center>
+            <div class="circle">
+                <div class="adj">
+                    <center>
+                        <div class="adj1">
+                            <svg width="170" height="170">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="lightgrey" stroke-width="8" />
+                                <circle class="filled1" cx="50" cy="50" r="45" fill="none" stroke="#3973fa" stroke-width="8" />
+                            </svg>
+                            <div class="percent1">
+                                77%
+                            </div>
+                            <p>Reccomend to a Friend</p>
+                        </div>
+                        <div class="adj1">
+                            <svg width="170" height="170">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="lightgrey" stroke-width="8" />
+                                <circle class="filled2" cx="50" cy="50" r="45" fill="none" stroke="#3973fa" stroke-width="8" />
+                            </svg>
+                            <div class="percent2">
+                                85%
+                            </div>
+                            <p>Positive reviews recieved</p>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </center>
+        <div class="post">
+            <img src="customers/customer.png" alt="user">
+            <input type="text" name="review" id="review" placeholder="Write a Review">
+            <button>Post</button>
+        </div>
+        <section class="reviews">
+            <div class="review-card">
+                <img src="customers/cust1.jpg" alt="User Avatar">
+                <h3>John Froster</h3>
+                <h4>Fantastic Custom PC Build!</h4>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="review-text">I recently purchased a custom-built PC from this company, and I couldn't be happier with my purchase. The team worked closely with me to understand my specific needs and preferences. The end result exceeded my expectations in terms of performance and aesthetics. The build quality is top-notch, and everything was put together with great attention to detail. I highly recommend their services for anyone looking for a personalized and high-performance PC!</p>
+            </div>
+            <br>
+            <div class="review-card">
+                <img src="customers/cust2.jpg" alt="User Avatar">
+                <h3>Dave Smith</h3>
+                <h4>Outstanding Customer Service and Expertise</h4>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="review-text">The customer service I received while working with this company was exceptional. They guided me through the entire process of choosing the right components for my custom PC build. Their expertise and knowledge helped me make informed decisions, resulting in a system that perfectly suits my needs. The build was completed in a timely manner, and I appreciate the ongoing support I've received. I'm thrilled with my new PC, and I'll definitely be a repeat customer!</p>
+            </div>
+            <br>
+            <div class="review-card">
+                <img src="customers/cust3.jpg" alt="User Avatar">
+                <h3>Emily Johnson</h3>
+                <h4>Impressive Performance, Sleek Design</h4>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="review-text">I'm blown away by the performance of the custom PC I purchased from this company. From gaming to content creation, it handles everything with ease. The components selected for my build were of high quality, and the cable management inside the case is impeccable. Additionally, the sleek and modern design of the PC adds a touch of elegance to my setup. It's not just a powerful machine; it's also a visual masterpiece. Kudos to the team for delivering an outstanding product!</p>
+            </div>
+            <br>
+            <div class="review-card">
+                <img src="customers/cust4.jpg" alt="User Avatar">
+                <h3>Lisa Roberts</h3>
+                <h4>Smooth and Hassle-Free Process</h4>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="review-text">Ordering my custom PC was a breeze with this company. The website is user-friendly, and the customization options are extensive. The communication throughout the build process was excellent, with regular updates on the status of my order. The PC arrived well-packaged and ready to go. Setting it up was a straightforward process, and I encountered no issues. I appreciate the efficiency and professionalism demonstrated by the team. I'm enjoying my new PC without any hassle!</p>
+            </div>
+            <br>
+            <div class="review-card">
+                <img src="customers/cust5.jpg" alt="User Avatar">
+                <h3>Tom Iceberg</h3>
+                <h4>Value for Money and Future-Proofing</h4>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="review-text">The investment in my custom-built PC from this company is truly worth it. Not only did I get a high-performance machine tailored to my specifications, but the components chosen also ensure that my system is future-proof. The attention to detail in component selection and assembly is evident, and it gives me confidence that this PC will serve me well for years to come. I believe I've received great value for my money, and I highly recommend this company to anyone in need of a reliable and customizable PC solution.</p>
+            </div>
+            <button class="loadMore">Load More</button>
+        </section>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="footer-column" style="display: flex; justify-content: center; margin: 1rem;">
+                        <img src="../../images/new-pc-icon.png" alt="logo" style="width: 120px; height: 120px;">
+                        <h1 style="font-size: 50px; margin-left: 1rem; color: aliceblue;">SpecsCraft</h1>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="../Contact Us/contact.html">Contact Us</a></li>
+                        <li><a href="../About Us/about.html">About Us</a></li>
+                        <li><a href="../../../index.html#faq">FAQs</a></li>
+                        <li><a href="../Customers/customerReviews.html">Reviews</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#d1">Shop by Category</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Office Address: <a
+                                href="https://www.google.com/maps/place/Maharashtra+Education+Society's+MES+Senior+College,+Pune/@18.5044433,73.814579,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf97c94a3ac5:0x2d206438c4641c30!8m2!3d18.5044382!4d73.8171539!16s%2Fg%2F11q951229f?hl=en&entry=ttu"
+                                target="_blank"><i class="fab fa-facebook-f"></i>304, WxD Studios, MES Senior College,
+                                Mayur Colony, kothrud, Pune 411058</a></li>
+                        <li>Phone: <a href="tel:+917541482814"> +91-75414 82814</a> 10am-6pm (Mon-Sat)</li>
+                        <li>Mail: <a href="mailto:contact.specscraft@gmail.com">contact.specscraft@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Socials</h3>
+                    <div class="img-div">
+                        <div class="img-container"><img src="../../images/facebook.png" class="social" alt="Facebook">
+                        </div>
+                        <div class="img-container"><img src="../../images/instagram.png" class="social" alt="Instagram">
+                        </div>
+                        <div class="img-container"><img src="../../images/linkedin.png" class="social" alt="LinkedIn">
+                        </div>
+                    </div>
+                </div>
+                <div class="top-button">
+                    <a href="/#"><img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="top-arrow"
+                            class="top-arrow"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 <a class="footer-link" href="#rero"
+                        style="transition: all 5s ease-in-out;">SpecsCraft</a>. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="./Libraries/Hamburger/hamburger.js"></script>
+    <script src="./Libraries/FAQ's/faq.js"></script>
+</body>
+
+</html>

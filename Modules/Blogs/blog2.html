@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empower Your Gaming Experience | WxD Studio</title>
+    <link rel="icon" sizes="200x200" href="/images/pc-tower.png">
+    <link rel="stylesheet" href="card.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-family: tahoma;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            background-color: white;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            display: inline-flex;
+            width: 70%;
+            position: fixed;
+            margin-top: 0.5rem;
+            background-color: #333;
+            color: aliceblue;
+            box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .logo {
+            display: inline-flex;
+            width: min-content;
+            font-family: tahoma;
+            cursor: pointer;
+        }
+
+        .logo-icon {
+            width: 3rem;
+            height: 3rem;
+            margin-top: 0.5em;
+            margin-left: 2rem;
+        }
+
+        .logo-txt {
+            font-size: 26px;
+            width: 100%;
+        }
+
+        .container {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container2 {
+            width: max-content;
+            margin: 1.8rem 0rem 0 10rem;
+            display: inline-flex;
+        }
+
+        #search {
+            width: 10rem;
+            height: 2rem;
+            margin: 0;
+            border: solid 1px black;
+            border-radius: 0.8rem;
+            padding: 8px;
+        }
+
+        .search-btn {
+            background-color: transparent;
+            border: none;
+            margin: 0 0 1.5rem 0;
+        }
+
+        #search-img {
+            width: auto;
+            cursor: pointer;
+        }
+
+        nav {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav li {
+            list-style-type: none;
+            margin-left: 3rem;
+            cursor: pointer;
+            color: azure;
+        }
+
+        nav:nth-child(5) {
+            margin-right: 0;
+        }
+
+        nav li:hover {
+            color: rgb(48, 186, 250);
+        }
+
+        #log-in {
+            margin: 2.1rem 0 0 3rem;
+            padding: auto;
+        }
+
+        .container3 {
+            width: min-content;
+            margin: 2rem 0 0 0rem;
+            cursor: pointer;
+        }
+
+        #count {
+            position: absolute;
+            top: 1rem;
+            right: 9rem;
+            background-color: #89bfec;
+            color: rgb(0, 0, 0);
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .rero {
+            margin: 12rem 0 0 6rem;
+        }
+
+        .rero p a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .rero p a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+
+        .blog-head {
+            width: 50%;
+        }
+
+        .blog-head p {
+            font-size: 14px;
+            text-align: left;
+            color: rgb(253, 49, 49);
+            margin: 0 0 0 0;
+        }
+
+        .blog-head .head {
+            font-size: xx-large;
+            color: #333;
+            margin: 0 0 0 0;
+        }
+
+        .rero center img {
+            width: 57rem;
+            margin: 4rem 0 4rem 0;
+        }
+
+        .rero .blog-content {
+            width: 50%;
+        }
+
+        .rero .blog-content p {
+            color: #5e5e5e;
+            margin: 0 0 0 0;
+            font-size: 18px;
+            text-align: left;
+            line-height: 150%;
+        }
+
+        .rero .blog-content .sub-point {
+            margin: 1.5rem 0 0 0;
+            color: #504f4f;
+            font-weight: bold;
+        }
+
+        .rero .blog-content .end {
+            margin: 4rem 0 0 0;
+        }
+
+
+
+        /* Footer Section */
+
+        footer {
+            background-color: #333;
+            padding: 20px 0;
+            margin: 10rem 0 0 -6rem;
+        }
+
+        .footer-logo {
+            margin: 4rem;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            /* Spread columns evenly */
+        }
+
+        .footer-column {
+            flex-basis: 30%;
+            /* Adjust column widths as needed */
+        }
+
+        .footer-column h3 {
+            font-weight: bolder;
+            color: #fcefef;
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 1rem;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 1rem;
+            color: #fcefef;
+        }
+
+        .footer-column ul li a {
+            color: #fcefef;
+            text-decoration: none;
+        }
+
+        .footer-column ul li a:hover {
+            color: rgb(48, 186, 250);
+            transition: all 0.4s ease-in-out;
+            /* Highlight links on hover */
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #ffffff;
+            padding-top: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+            text-align: center;
+            color: #fcefef;
+        }
+
+        .img-container {
+            width: 2rem;
+            height: 2rem;
+            margin-top: 1rem;
+            background-color: #fff;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        .img-container:hover {
+            background-color: rgb(30, 151, 250);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .img-div {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social {
+            width: 1rem;
+            margin: 0.5rem;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #fcefef;
+        }
+
+        .footer-link:hover {
+            color: #fcefef;
+        }
+
+        .footer-link:visited {
+            color: #fcefef;
+        }
+
+        .top-button {
+            width: 2rem;
+            height: 2rem;
+            margin-top: 16rem;
+            margin-right: 1rem;
+            background-color: #fff;
+            border-radius: 100%;
+        }
+
+        .top-button:hover {
+            background-color: #d4d1d1;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .top-arrow {
+            width: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img class="logo-icon" src="../../images/new-pc-icon.png" alt="logo"> &nbsp;&nbsp;&nbsp;
+                    <h1 class="logo-txt" onclick="window.location.href = '../../index.html';">SpecsCraft</h1>
+                </div>
+                <nav>
+                    <li onclick="window.location.href = '../../index.html';">Home</li>
+                    <li onclick="window.location.href = '../../index.html#d1';">Categories</li>
+                    <li onclick="window.location.href = '../../index.html#faq';">FAQ</li>
+                    <li onclick="window.location.href = '../Contact Us/contact.html';">Contact Us</li>
+                    <li onclick="window.location.href = '../About Us/about.html';">About Us</li>
+                </nav>
+            </div>
+            <div class="container2">
+                <label for="search"><input type="search" name="search" id="search" placeholder="Search Products"></label>
+                <button class="search-btn" type="submit"><img src="../../images/search.png" alt="search icon" width="32" height="32"
+                        id="search-img"></button>
+            </div>
+            <div class="container3" onclick="window.location.href='../Shopping Cart/cart.html';">
+                <img src="../../images/cart.png" alt="cart image" width="32" height="32">
+                <p id="count">4</p>
+            </div>
+            <nav>
+                <a href="../Sign Up-Log In/log-in.html" target="_blank">
+                    <li id="log-in">Log In</li>
+                </a>
+            </nav>
+        </header>
+    </div>
+    <div class="rero">
+        <p style="font-size: medium;"><span>‹</span> <a href="javascript:void(0)" id="back-btn">Go Back</a></p>
+        <center>
+            <div class="blog-head">
+                <p>Blog--Jan 14, 2024</p>
+                <p class="head">Empower Your Gaming Experience: Build pc online with SpecsCraft</p>
+            </div>
+        </center>
+        <center>
+            <img src="./blog pic/fabio-magalhaes-nmTm7knUnqs-unsplash.jpg" alt="Gaming PC Image">
+        </center>
+        <center>
+            <div class="blog-content">
+                <p>In the digital age, gaming enthusiasts, content creators, and professionals are seeking personalized and powerful computing solutions. Crafting a custom-built PC tailored to your specific needs has never been easier thanks to the option to build a PC online. SpecsCraft, a brand renowned for its excellence in technology, offers a seamless and exciting experience for anyone looking to design their dream PC.</p>
+                <p class="sub-point">The Power of Building a PC Online:</p>
+                <p>Building a PC online has become increasingly popular, and for good reason. It provides numerous benefits, allowing you to create a system that suits your unique requirements and preferences. SpecsCraft is here to ensure that this experience is not only effortless but also results in a high-quality, high-performance PC.</p>
+                <p class="sub-point">Personalized Performance:</p>
+                <p>When you build a PC online with SpecsCraft, you are in control. You can select every component to meet your specific needs, from processors and graphics cards to storage options and memory capacity. This level of customization ensures that your PC performs to your standards, whether you’re a gamer, a creative professional, or a general user.</p>
+                <p class="sub-point">Expert Guidance:</p>
+                <p>SpecsCraft recognizes that not everyone is a tech expert. That’s why they offer expert guidance throughout the online PC building process. If you have questions or need assistance, their team of professionals is there to help you make informed decisions. This ensures that your custom PC is designed to maximize your computing experience.</p>
+                <p class="sub-point">Quality Assurance:</p>
+                <p>Quality and reliability are paramount when building a custom PC. SpecsCraft understands this and is committed to delivering excellence. Each component you select for your PC has been tested and verified for quality and compatibility. This meticulous attention to detail minimizes the risk of compatibility issues and guarantees a reliable and durable system.</p>
+                <p class="sub-point">Cost-Efficient Solutions:</p>
+                <p>Some might believe that custom PC building is costly, but SpecsCraft offers competitive pricing. By eliminating the need for pre-installed software or unwanted components, you can build a PC that precisely fits your budget. This cost-efficient approach allows you to allocate resources to the parts that matter most to you.</p>
+                <p class="sub-point">Future-Proofing Your PC:</p>
+                <p>Technology evolves rapidly, and your PC should evolve with it. SpecsCraft’s online PC building tool gives you the freedom to stay ahead of the curve. As you select the latest components, you’re essentially future-proofing your PC, ensuring that it can handle new software, games, and tasks for years to come.</p>
+                <p class="sub-point">Easy Upgrades:</p>
+                <p>In the future, when you want to upgrade your PC, the online build process makes it a breeze. You can easily replace or add components to keep your PC up to date with the latest technology. This flexibility ensures that your PC remains a powerful and relevant tool in the ever-changing tech landscape.</p>
+                <p class="sub-point">Conclusion:</p>
+                <p>Building a PC online with SpecsCraft is the gateway to a computing experience that’s entirely your own. It’s an opportunity to take control of your technology, ensuring that it aligns perfectly with your needs, preferences, and budget. With expert guidance, quality assurance, and future-proofing options, SpecsCraft empowers you to create a PC that goes beyond your expectations.</p>
+                <p class="end">Whether you’re a passionate gamer, a creative professional, or a dedicated enthusiast, building a custom PC online at SpecsCraft is the path to unleashing your full computing potential. Begin your journey today and create a PC that reflects your individuality and empowers your digital pursuits. Your dream PC is just a few clicks away.</p>
+            </div>
+        </center>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="footer-column" style="display: flex; justify-content: center; margin: 1rem;">
+                        <img src="../../../images/new-pc-icon.png" alt="logo" style="width: 120px; height: 120px;">
+                        <h1 style="font-size: 50px; margin-left: 1rem; color: aliceblue;">SpecsCraft</h1>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="../../../Modules/Contact Us/contact.html">Contact Us</a></li>
+                        <li><a href="../About Us/about.html">About Us</a></li>
+                        <li><a href="../../../index.html#faq">FAQs</a></li>
+                        <li><a href="../Customers/customerReviews.html">Reviews</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Return & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="../../../index.html#d1">Shop by Category</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Office Address: <a
+                                href="https://www.google.com/maps/place/Maharashtra+Education+Society's+MES+Senior+College,+Pune/@18.5044433,73.814579,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bf97c94a3ac5:0x2d206438c4641c30!8m2!3d18.5044382!4d73.8171539!16s%2Fg%2F11q951229f?hl=en&entry=ttu"
+                                target="_blank"><i class="fab fa-facebook-f"></i>304, WxD Studios, MES Senior College,
+                                Mayur Colony, kothrud, Pune 411058</a></li>
+                        <li>Phone: <a href="tel:+917541482814"> +91-75414 82814</a> 10am-6pm (Mon-Sat)</li>
+                        <li>Mail: <a href="mailto:contact.specscraft@gmail.com">contact.specscraft@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Socials</h3>
+                    <div class="img-div">
+                        <div class="img-container"><img src="../../../images/facebook.png" class="social"
+                                alt="Facebook"></div>
+                        <div class="img-container"><img src="../../../images/instagram.png" class="social"
+                                alt="Instagram"></div>
+                        <div class="img-container"><img src="../../../images/linkedin.png" class="social"
+                                alt="LinkedIn"></div>
+                    </div>
+                </div>
+                <div class="top-button">
+                    <a href="/#"><img src="https://cdn-icons-png.flaticon.com/128/992/992703.png" alt="top-arrow"
+                            class="top-arrow"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 <span class="footer-link">SpecsCraft</span>. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+
+        //Previous Page
+        const backBtn = document.getElementById('back-btn');
+        backBtn.addEventListener('click', () => {
+            window.history.back();
+        });
+
+        //Top Button
+        const topBtn = document.querySelector('.footer-link');
+        topBtn.addEventListener('click', () => {
+            window.scroll(0, 0);
+        });
+
+    </script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script src="../../../Libraries/Card/prod1.js"></script>
+</body>
+
+</html>

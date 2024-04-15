@@ -520,6 +520,29 @@ hr {
     font-size: 14px;
 }
 
+.blog {
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 15rem;
+    display: inline-flex;
+}
+
+.blog .card {
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+}
+
+.blog .card img {
+    width: 20rem;
+}
+
+.blog .card p {
+    color: red;
+    margin-top: -1rem;
+}
+
 .postDisplay {
     display: inline-flex;
     margin-left: 5.5rem;
@@ -589,7 +612,7 @@ hr {
 footer {
     background-color: #333;
     padding: 20px 0;
-    margin-top: 206%;
+    margin-top: 5rem;
 }
 
 .footer-logo {
