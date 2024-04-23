@@ -591,6 +591,7 @@ hr {
 
 .postBtn:hover {
     color: red;
+    cursor: pointer;
 }
 
 .postBtn span {
